@@ -1,3 +1,17 @@
+:root {
+    --principal: #D9D6D2;
+    --secundario: #BFB8B9;
+    --cuadro: #D9B391;
+    --fondo: #A68072;
+    --negro: #0D0D0D;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
 html {
     font-family: 'Rubik', sans-serif;
-}
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
