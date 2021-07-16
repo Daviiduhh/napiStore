@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Napi Handcrafted</title>
-    <link rel="preload" href="css/normalize.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
-</head>
-<body>
-
+    <link rel="preload" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="logo Napi Handcrafted">
-        </a>
+      <a href="index.html">
+        <img
+          class="header__logo"
+          src="img/logo.png"
+          alt="logo Napi Handcrafted"
+        />
+      </a>
     </header>
 
     <nav class="menu">
-        <a class="menu__enlace" href="index.html">Tienda</a>
-        <a class="menu__enlace" href="nosotros.html">Nosotros</a>
+      <a class="menu__enlace" href="index.html">Tienda</a>
+      <a class="menu__enlace" href="nosotros.html">Nosotros</a>
     </nav>
 
     <main>
-        <h1>Producto</h1>
-        <div class="producto__grid">
-            <div class="producto__grid__img">
-                <img src="../img/1.jpg" alt="">
-            </div>
-
-            <div class="producto__grid__descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate nihil natus hic laboriosam pariatur commodi minima vitae fugit dolorum, necessitatibus veniam minus earum nisi vero assumenda fuga numquam quaerat.</p>
-            </div>
-            
-            <div class="producto__grid__carrito">
-
-            </div>
+      <h1>Cartera negra</h1>
+      <div class="producto__grid">
+        <div class="producto__grid__img">
+          <img src="../img/1.jpg" alt="Imagen del producto" />
         </div>
+
+        <div class="producto__grid__descripcion">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            cupiditate nihil natus hic laboriosam pariatur commodi minima vitae
+            fugit dolorum, necessitatibus veniam minus earum nisi vero assumenda
+            fuga numquam quaerat.
+          </p>
+        </div>
+
+        <form class="producto__grid__carrito" action="">
+            <select class="formulario__campo" name="" id="">
+              <option disabled selected>--Color hilo--</option>
+              <option value="">Blanca</option>
+              <option value="">Negra</option>
+              <option value="">Rainbown</option>
+          </select>
+          <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+          <input class="formulario_submit" type="submit" value="Agregar al carrito">
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__texto">Napi Handcrafted - Todos los derechos reservados 2021</p>
+      <p class="footer__texto">
+        Napi Handcrafted - Todos los derechos reservados 2021
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
