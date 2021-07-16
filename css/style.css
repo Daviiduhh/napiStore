@@ -221,3 +221,45 @@ main {
     align-items: start;
   }
 }
+
+.nosotros {
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+@media (max-width: 768px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.nosotros__img img {
+  max-height: 30rem;
+}
+
+.nosotros__subtitulo {
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.nosotros__ventajas {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .nosotros__ventajas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
